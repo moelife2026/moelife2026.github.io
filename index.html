@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MOE-LIFE</title>
+  <meta name="description" content="美少女フィギュア、食玩、ガンダム等のぷちレビューと美少女フィギュア、萌えフィギュア、抱き枕、抱き枕カバー等のショップ情報をお伝えしてます">
+  <meta name="keywords" content="美少女,フィギュア,萌,キャラ,発売,グッズ">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <style type="text/tailwindcss">
+    @layer components {
+      .review-image-large {
+        @apply aspect-[4/3] w-full object-cover transition-transform duration-300 rounded-lg;
+      }
+      .review-image-small {
+        @apply w-36 h-36 object-cover transition-transform duration-300 rounded-md shadow;
+      }
+      .group:hover .review-image-large,
+      .group:hover .review-image-small {
+        @apply scale-105;
+      }
+      .sticky-header {
+        @apply sticky top-0 z-10 backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-700;
+      }
+      .review-link {
+        @apply mt-2 text-sm text-center text-gray-700 dark:text-gray-300 hover:text-blue-500 block;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+
+  <!-- ヘッダー -->
+  <header class="sticky-header px-4 py-3 sm:px-6 md:px-10 flex items-center justify-between">
+    <a href="https://moe-life.com/" class="flex items-center gap-2">
+      <h1 class="text-xl font-bold text-gray-900 dark:text-white">MOE-LIFE</h1>
+    </a>
+    <nav class="ml-auto flex gap-6">
+      <a href="https://moe-life.com/kakorebyu-.html" class="text-sm font-medium text-gray-700 hover:text-blue-500 dark:text-gray-300">Reviews</a>
+      <a href="https://moe-life.com/video-corner.html" class="text-sm font-medium text-gray-700 hover:text-blue-500 dark:text-gray-300">Video Library</a>
+      <a href="https://moe-life.com/About.html" class="text-sm font-medium text-gray-700 hover:text-blue-500 dark:text-gray-300">このサイトについて</a>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-8">
+
+    <!-- 大きいヘッダー画像バナー -->
+    <div class="flex justify-center mb-8">
+      <a href="https://moe-life.com/">
+        <img src="https://moe-life.com/TOP100710-2.png" alt="MOE-LIFEバナー" class="w-[500px] h-auto"/>
+      </a>
+    </div>
+
+    <!-- ===== 動画コーナー案内バナー（複数横並び版） ===== -->
+    <section class="video-link-section mb-8">
+      <h2 class="text-lg font-bold mb-4 text-pink-500">🎬 Video Library</h2>
+
+      <!-- 横並びラッパー -->
+      <div class="flex justify-center gap-6 flex-wrap">
+        <!-- バナー1 -->
+        <a href="https://moe-life.com/video-red.html" class="group block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform-gpu">
+          <img src="https://moe-life.com/newgazouimg/dougaTOP01.jpg"
+               alt="ご挨拶YOUTUBE"
+               class="review-image-large max-w-[320px]"/>
+          <p class="mt-2 text-center text-sm text-gray-700 dark:text-gray-300 font-medium group-hover:text-pink-500 transition">▶ ご挨拶YOUTUBE</p>
+        </a>
+
+        <!-- バナー2 -->
+        <a href="https://moe-life.com/video-red02.html" class="group block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform-gpu">
+          <img src="https://moe-life.com/newgazouimg/2513a01.jpg"
+               alt="動画2"
+               class="review-image-large max-w-[320px]"/>
+          <p class="mt-2 text-center text-sm text-gray-700 dark:text-gray-300 font-medium group-hover:text-pink-500 transition">▶ ダンダダン フィグリズムアルファ オカルン（変身）<br>トランスフォームビジュアルVerが取れなかった話</p>
+        </a>
+
+        <!-- バナー3 -->
+        <a href="#" class="group block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform-gpu">
+          <img src="https://moe-life.com/newgazouimg/dougaTOP000.jpg"
+               alt="動画3"
+               class="review-image-large max-w-[320px]"/>
+          <p class="mt-2 text-center text-sm text-gray-700 dark:text-gray-300 font-medium group-hover:text-pink-500 transition">▶ 準備中</p>
+        </a>
+      </div>
+
+      <!-- Video Library 一覧リンク -->
+      <div class="mt-6 text-center">
+        <a href="https://moe-life.com/video-corner.html"
+           class="inline-block px-6 py-3 bg-pink-500 text-white rounded-lg shadow hover:bg-pink-600 transition">
+          ▶ Video Library 一覧へ
+        </a>
+      </div>
+    </section>
+    <!-- ▲ 動画コーナー案内バナーここまで -->
+
+    <!-- 最新レビュー 6件 -->
+    <h2 class="text-lg font-bold mb-4">最新レビュー</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/furando-rutibido-rurebyu-.html">
+          <img src="https://moe-life.com/img202001/IMG_7286.JPG" alt="東方project フランドール・スカーレットレビュー" class="review-image-large"/>
+        </a>
+        <a href="https://moe-life.com/furando-rutibido-rurebyu-.html" class="review-link">
+          東方project フランドール・スカーレットちびっこドール イザナギ流通限定レビュー
+        </a>
+      </div>
+      <div class="group flex flex-col items-center">
+        <a href="http://moe-life.com/nenndoroidohosinoka-bii.html">
+          <img src="https://moe-life.com/nenndoroido-ka-bii/2016021033.jpg" alt="ねんどろいど星のカービィレビュー" class="review-image-large"/>
+        </a>
+        <a href="http://moe-life.com/nenndoroidohosinoka-bii.html" class="review-link">ねんどろいど星のカービィ カービィレビュー</a>
+      </div>
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/nendoroido_hisukoaga-ru_oonoakira.html">
+          <img src="https://moe-life.com/img151123/23.jpg" alt="ハイスコアガール大野晶レビュー" class="review-image-large"/>
+        </a>
+        <a href="https://moe-life.com/nendoroido_hisukoaga-ru_oonoakira.html" class="review-link">
+          ハイスコアガール大野晶レビュー（たい焼きパーツ付き）
+        </a>
+      </div>
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/nendoroido_hatunemiku_ouenba-jyon.html">
+          <img src="https://moe-life.com/img59/_MG_1165.jpg" alt="ねんどろいど 初音ミクレビュー" class="review-image-large"/>
+        </a>
+        <a href="https://moe-life.com/nendoroido_hatunemiku_ouenba-jyon.html" class="review-link">
+          全力で応援！ねんどろいど 初音ミク 応援verレビュー
+        </a>
+      </div>
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/aruta-sasasegawa.html">
+          <img src="https://moe-life.com/img58/3883-02.jpg" alt="リトルバスターズ 笹瀬川佐々美レビュー" class="review-image-large"/>
+        </a>
+        <a href="https://moe-life.com/aruta-sasasegawa.html" class="review-link">
+          リトルバスターズ！笹瀬川佐々美 アルター版 レビュー
+        </a>
+      </div>
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/nenndoroido-BLACKROCKSHOOTER.html">
+          <img src="https://moe-life.com/img57/3780-02.jpg" alt="ねんどろいど ブラック★ロックシューター" class="review-image-large"/>
+        </a>
+        <a href="https://moe-life.com/nenndoroido-BLACKROCKSHOOTER.html" class="review-link">
+          ねんどろいど ブラック★ロックシューターレビュー
+        </a>
+      </div>
+    </div>
+
+ <!-- 小さいレビュー画像 14個（おすすめレビュー） -->
+    <h2 class="text-lg font-bold mb-4">おすすめレビュー</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/arute-feito_yukiyama_roke.html">
+          <img src="https://moe-life.com/img60/_MG_1283.jpg" alt="フェイトちゃんを連れて雪山にロケｗ" class="review-image-small"/>
+        </a>
+        <a href="https://moe-life.com/arute-feito_yukiyama_roke.html" class="review-link">フェイトちゃんを連れて雪山にロケｗ</a>
+      </div>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/bakemonogatari-sono2.html">
+          <img src="https://moe-life.com/img56/IMG_3698-01.jpg" alt="化物語セット其ノ貮" class="review-image-small"/>
+        </a>
+        <a href="https://moe-life.com/bakemonogatari-sono2.html" class="review-link">化物語セット其ノ貮 神原駿河 八九寺真宵 千石撫子レビュー</a>
+      </div>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/purauzu-nakanoazusa.html">
+          <img src="https://moe-life.com/img55/IMG_3663-1.jpg" alt="プライズ 中野梓 けいおん！" class="review-image-small"/>
+        </a>
+        <a href="https://moe-life.com/purauzu-nakanoazusa.html" class="review-link">プライズ 中野梓 けいおん！プレミアムフィギュアレビュー</a>
+      </div>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/nenndoroidoputi-bakemonogatari-01-rebyu-.html">
+          <img src="https://moe-life.com/img52/IMG_3402-1.jpg" alt="ねんどろいどぷち化物語" class="review-image-small"/>
+        </a>
+        <a href="https://moe-life.com/nenndoroidoputi-bakemonogatari-01-rebyu-.html" class="review-link">ねんどろいど ぷち 化物語セット 其ノ壹レビュー</a>
+      </div>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/puraizu-miyagawamiku.html">
+          <img src="https://moe-life.com/img51/IMG_3326-1.jpg" alt="初音ミク 宮川武Ver." class="review-image-small"/>
+        </a>
+        <a href="https://moe-life.com/puraizu-miyagawamiku.html" class="review-link">プライズ プレミアムフィギュア 初音ミク 宮川武Ver.レビュー</a>
+      </div>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/nendomu-bi-feito.html">
+          <img src="https://moe-life.com/img50/IMG_3271-1.jpg" alt="ねんどろいど フェイト" class="review-image-small"/>
+        </a>
+        <a href="https://moe-life.com/nendomu-bi-feito.html" class="review-link">ねんどろいど フェイト・テスタロッサ The MOVIE 1st Ver.レビュー</a>
+      </div>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/banndaiha-tokyattipurikyua.html">
+          <img src="https://moe-life.com/img48/IMG_3189-1.jpg" alt="プリキュアフィギュア" class="review-image-small"/>
+        </a>
+        <a href="https://moe-life.com/banndaiha-tokyattipurikyua.html" class="review-link">プリキュアキューティーフィギュア キュアブロッサム/キュアマリン</a>
+      </div>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/arute-feito.html">
+          <img src="https://moe-life.com/img47/3147-2.jpg" alt="アルター フェイト" class="review-image-small"/>
+        </a>
+        <a href="https://moe-life.com/arute-feito.html" class="review-link">フェイト・テスタロッサ アルター版 再レビュー</a>
+      </div>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/nendomu-bi-nanoha.html">
+          <img src="https://moe-life.com/img46/IMG_3100-1.jpg" alt="ねんどろいど 高町なのは" class="review-image-small"/>
+        </a>
+        <a href="https://moe-life.com/nendomu-bi-nanoha.html" class="review-link">ねんどろいど 高町なのは The MOVIE 1st verレビュー</a>
+      </div>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/nendoroidominamitiaki.html">
+          <img src="https://moe-life.com/img45/IMG_2987-1.jpg" alt="南千秋 ねんどろいど" class="review-image-small"/>
+        </a>
+        <a href="https://moe-life.com/nendoroidominamitiaki.html" class="review-link">ねんどろいど みなみけ 南千秋レビュー</a>
+      </div>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/%E3%83%95%E3%82%A3%E3%82%AE%E3%83%A5%E3%82%A2%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC%E3%83%A0%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%9F%E3%81%93%E3%83%AB%E3%82%AB%E3%82%88%E3%81%A0%E3%82%8C%E9%A1%94.html">
+          <img src="https://moe-life.com/img43/IMG_2942-2.jpg" alt="たこルカ" class="review-image-small"/>
+        </a>
+        <a href="https://moe-life.com/%E3%83%95%E3%82%A3%E3%82%AE%E3%83%A5%E3%82%A2%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC%E3%83%A0%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%9F%E3%81%93%E3%83%AB%E3%82%AB%E3%82%88%E3%81%A0%E3%82%8C%E9%A1%94.html" class="review-link">キャラクターチャームコレクション たこルカ よだれ顔</a>
+      </div>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://moe-life.com/%E3%83%95%E3%82%A3%E3%82%AE%E3%83%A5%E3%82%A2%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/%E3%83%97%E3%83%A9%E3%82%A4%E3%82%BA%E3%82%BB%E3%82%AC%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AFEX%E3%83%95%E3%82%A3%E3%82%AE%E3%83%A5%E3%82%A2%E3%83%91%E3%83%BC%E3%83%AB%E5%A1%97%E8%A3%85ver%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC.html">
+          <img src="https://moe-life.com/img42/IMG_2836-0.jpg" alt="セガ 初音ミクEX" class="review-image-small"/>
+        </a>
+        <a href="https://moe-life.com/%E3%83%95%E3%82%A3%E3%82%AE%E3%83%A5%E3%82%A2%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/%E3%83%97%E3%83%A9%E3%82%A4%E3%82%BA%E3%82%BB%E3%82%AC%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AFEX%E3%83%95%E3%82%A3%E3%82%AE%E3%83%A5%E3%82%A2%E3%83%91%E3%83%BC%E3%83%AB%E5%A1%97%E8%A3%85ver%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC.html" class="review-link">プライズ セガ 初音ミクEX フィギュアパール塗装verレビュー</a>
+      </div>
+    </div>
+
+    <!-- 案内文 -->
+    <div class="mt-12 text-center">
+      <p class="text-base text-gray-700 dark:text-gray-300 mb-4">
+        これまでのレビュー記事をまとめています。<br>
+        気になる方はぜひチェックしてみてください！
+      </p>
+      <a href="https://moe-life.com/kakorebyu-.html"
+         class="inline-block px-6 py-3 bg-pink-500 text-white rounded-lg shadow hover:bg-pink-600 transition">
+        過去レビュー一覧へ
+      </a>
+    </div>
+
+  </main>
+
+  <!-- フッター -->
+  <footer class="mt-12 p-4 text-center text-sm text-gray-500 dark:text-gray-400">
+    &copy; <a href="https://moe-life.com/" class="hover:underline">MOE-LIFE</a> (美少女フィギュア、萌え情報サイト) all rights reserved.
+  </footer>
+
+</body>
+</html>
